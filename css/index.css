@@ -59,8 +59,15 @@ button:hover{
 }
 
 .img {
-    z-index: -2;
     object-fit: cover;
     height: 100%;
     width: auto;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .img {
+        object-fit: cover;
+        height: auto;
+        width: 100%;
+    }
 }
