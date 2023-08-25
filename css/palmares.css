@@ -4,20 +4,20 @@
 }
 
 body{
-    background-color: black;
-    color: white;
-    font-family: Nasa;
+    background-color: black !important;
+    color: white !important;
+    font-family: Nasa !important;
 }
 
 #result{
     display: grid;
-    grid-template-columns: 8fr 1fr;
-    width: 50em;
     align-items: center;
+    width: 50em;
+    height: 4em;
     border: solid white 1px;
 }
 
-div:not(#result){
+#table{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,6 +26,7 @@ div:not(#result){
 #result p{
     font-size: 20px;
     margin-left: 10px;
+    margin-bottom: 0px !important;
 }
 
 #result img {
@@ -34,4 +35,15 @@ div:not(#result){
 
 h2, h1{
     text-align: center;
+}
+
+@media (min-width: 300px) and (max-width: 991px) {
+    #result{
+        width: 20em;
+        height: 6em;
+    }
+
+    .row{
+        text-align: center;
+    }
 }
