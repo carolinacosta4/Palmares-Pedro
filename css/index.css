@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Nasa;
+    src: url(../assets/nasalization/nasalization-rg.otf);
+}
+
+body{
+    background-color: black !important;
+    color: white !important;
+    margin: 0;
+}
+
+html{
+    margin: 0;
+}
+
+h1{
+    font-family: Nasa !important;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100vh;
+    grid-template-areas: "imagens info";
+}
+
+button{
+    width: 10em;
+    height: 2em;
+    background-color: white;
+    border-radius: 5px !important;
+    border-color: white;
+    font-family: Nasa !important;
+    font-size: 16px;
+}
+
+#head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo {
+    margin-bottom: 50px;
+    font-size: 50px;
+    text-align: center;
+    width: 25vw;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+.gradiente{
+	background-image: linear-gradient(10deg, black 0%, black 100%);
+    -webkit-mask-image: linear-gradient(to left, transparent 2%, black 40%);
+}
+
+.img {
+    z-index: -2;
+    object-fit: cover;
+    height: 100%;
+    width: auto;
+}

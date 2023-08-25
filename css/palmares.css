@@ -1,0 +1,37 @@
+@font-face {
+    font-family: Nasa;
+    src: url(../assets/nasalization/nasalization-rg.otf);
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Nasa;
+}
+
+#result{
+    display: grid;
+    grid-template-columns: 8fr 1fr;
+    width: 50em;
+    align-items: center;
+    border: solid white 1px;
+}
+
+div:not(#result){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#result p{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#result img {
+    width: 2em;
+}
+
+h2, h1{
+    text-align: center;
+}
