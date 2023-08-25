@@ -17,13 +17,6 @@ h1{
     font-family: Nasa !important;
 }
 
-body{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 100vh;
-    grid-template-areas: "imagens info";
-}
-
 button{
     width: 10em;
     height: 2em;
@@ -45,7 +38,6 @@ button{
     margin-bottom: 50px;
     font-size: 50px;
     text-align: center;
-    width: 25vw;
 }
 
 button:hover{
@@ -53,21 +45,19 @@ button:hover{
     color: white;
 }
 
-.gradiente{
-	background-image: linear-gradient(10deg, black 0%, black 100%);
-    -webkit-mask-image: linear-gradient(to left, transparent 2%, black 40%);
-}
-
-.img {
-    object-fit: cover;
-    height: 100%;
-    width: auto;
-}
-
 @media (min-width: 300px) and (max-width: 1024px) {
+    .img {
+        object-fit: cover;
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1025px) {
     body{
         display: grid;
-        grid-template-rows: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 100vh;
         grid-template-areas: "imagens info";
     }
 
@@ -78,7 +68,7 @@ button:hover{
 
     .img {
         object-fit: cover;
-        height: auto;
-        width: 100%;
+        height: 100%;
+        width: auto;
     }
 }
