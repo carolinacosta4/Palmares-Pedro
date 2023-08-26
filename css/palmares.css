@@ -9,10 +9,16 @@ body{
     font-family: Nasa !important;
 }
 
+/* section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1em;
+} */
+
 #result{
     display: grid;
     align-items: center;
-    width: 50em;
+    /* width: 50em; */
     height: 4em;
     border: solid white 1px;
 }
