@@ -48,7 +48,7 @@ h2{
 @media (min-width: 300px) and (max-width: 991px) {
     #result{
         width: 20em;
-        height: 6em;
+        height: 6.5em;
     }
 
     .row{
