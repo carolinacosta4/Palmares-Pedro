@@ -9,11 +9,9 @@ body{
     font-family: Nasa !important;
 }
 
-/* section{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 1em;
-} */
+section{
+    margin-bottom: 0.5em;
+}
 
 #result{
     display: grid;
@@ -41,6 +39,10 @@ body{
 
 h2, h1{
     text-align: center;
+}
+
+h2{
+    margin-top: 0.5em !important;
 }
 
 @media (min-width: 300px) and (max-width: 991px) {
